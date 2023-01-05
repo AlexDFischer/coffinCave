@@ -1,0 +1,60 @@
+therion 6.0.5 (2022-02-20)
+  - using Proj 8.2.1, compiled against 8.2.1
+initialization file: /etc/therion.ini
+reading ... done
+checking optional fonts csr10 csti10 csbx10 csss10 csssi10 ... OK
+checking optional fonts cmcyr10 cmcti10 cmcbx10 cmcss10 cmcssi10 ... OK
+configuration file: thconfig.thcfg
+reading ... done
+reading source files ... done
+preprocessing database ... done
+scanning centreline tree ... done
+searching for centerline loops ... done
+calculating station coordinates ... done
+average loop error: 4.26%
+processing survey data ... 
+####################### cavern log file ########################
+ 1> Survex 1.4.1
+ 2> Copyright © 1990-2021 Olly Betts
+ 3> Survey has no control points. Therefore I’ve fixed 1 at (0,0,0)
+ 4> 
+ 5> Survey contains 28 survey stations, joined by 29 shots.
+ 6> There are 2 loops.
+ 7> Total length of survey shots =  255.50m ( 255.50m adjusted)
+ 8> Total plan length of survey shots =  228.28m
+ 9> Total vertical length of survey shots =   96.00m
+10> Vertical range = 44.85m (from 1 at 0.00m to 24 at -44.85m)
+11> North-South range = 46.99m (from 11 at 33.31m to 28 at -13.69m)
+12> East-West range = 67.65m (from 24 at 66.54m to 5 at -1.11m)
+13>    6 1-nodes.
+14>   16 2-nodes.
+15>    5 3-nodes.
+16>    1 5-node.
+17> 
+######################### transcription ########################
+ 3> 1 : A1@coffinCave
+ 5> 28 : A28@coffinCave
+ 6> 2 : A2@coffinCave
+10> 1 : A1@coffinCave -- 24 : A18@coffinCave
+11> 11 : A11@coffinCave -- 28 : A28@coffinCave
+12> 24 : A18@coffinCave -- 5 : A5@coffinCave
+13> 6 : A6@coffinCave
+14> 16 : A16@coffinCave
+15> 5 : A5@coffinCave
+16> 1 : A1@coffinCave
+#################### end of cavern log file ####################
+done
+calculating basic statistics ... done
+processing extended elevation ... done
+processing references ... done
+selecting export objects ... done
+writing coffinCaveth.3d ... done
+writing xtherion file ... done
+compilation time: 1 sec
+
+
+######################### loop errors ##########################
+REL-ERR ABS-ERR TOTAL-L STS X-ERROR Y-ERROR Z-ERROR STATIONS
+  4.74%    2.1m   43.6m   5    0.2m    2.0m   -0.2m [A10@coffinCave - A26 - A22 - A21 - A20 - A10]
+  3.86%    2.3m   60.8m   6   -0.8m    2.2m    0.2m [A10@coffinCave - A16 - A15 - A13 - A12 - A11 - A10]
+##################### end of loop errors #######################

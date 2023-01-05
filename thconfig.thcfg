@@ -1,0 +1,6 @@
+encoding  utf-8
+input layout.th
+
+source coffinCave.th
+
+export model -fmt survex -o coffinCaveth.3d
