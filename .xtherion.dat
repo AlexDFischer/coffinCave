@@ -4,9 +4,9 @@ xth_cp_data_tree_insert 20 1 1 coffinCave coffinCave "" "" "length: 77.88m (surf
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
-xth_cp_map_tree_insert map 1 141X1 p1 1 planMap planMap@coffinCave "" ""
+xth_cp_map_tree_insert map 1 192X1 p1 1 planMap planMap@coffinCave "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 78 3
 set xth(th_exit_state) 2
-set xth(th_exit_number) 1674547912
+set xth(th_exit_number) 1674551061
 
