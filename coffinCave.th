@@ -5,6 +5,8 @@ survey coffinCave
 
 centreline
 
+units length feet
+
 data normal from to tape compass clino
       A1   A2   9    108.4 -46.9
       A2   A3   7.8   14.8 -13.5
@@ -37,5 +39,17 @@ data normal from to tape compass clino
      A27  A28  12.4  225    -7.1
 
 endcentreline
+  
+input planMap.th2
+
+map planMap
+  scrap1
+  scrap63
+  scrap73
+endmap
+
+join scrap1 scrap63
+join scrap63 scrap73 -count 2
+
 endsurvey
 

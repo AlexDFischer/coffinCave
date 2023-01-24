@@ -1,6 +1,16 @@
 encoding  utf-8
 input layout.th
 
+select coffinCave 
 source coffinCave.th
 
+layout mapLayout
+  legend on
+  symbol-set NSS
+  units imperial
+  scale 1 75
+endlayout
+
 export model -fmt survex -o coffinCaveth.3d
+
+export map -projection plan -layout mapLayout -o "output/coffinCaveMap.pdf"

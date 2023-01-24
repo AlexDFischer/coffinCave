@@ -1,5 +1,6 @@
 encoding  utf-8
 layout local
   units imperial
+  symbol-set NSS
 endlayout
-  
+

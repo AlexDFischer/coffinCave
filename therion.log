@@ -20,12 +20,12 @@ processing survey data ...
  4> 
  5> Survey contains 28 survey stations, joined by 29 shots.
  6> There are 2 loops.
- 7> Total length of survey shots =  255.50m ( 255.50m adjusted)
- 8> Total plan length of survey shots =  228.28m
- 9> Total vertical length of survey shots =   96.00m
-10> Vertical range = 44.85m (from 1 at 0.00m to 24 at -44.85m)
-11> North-South range = 46.99m (from 11 at 33.31m to 28 at -13.69m)
-12> East-West range = 67.65m (from 24 at 66.54m to 5 at -1.11m)
+ 7> Total length of survey shots =   77.88m (  77.84m adjusted)
+ 8> Total plan length of survey shots =   69.58m
+ 9> Total vertical length of survey shots =   29.26m
+10> Vertical range = 13.66m (from 1 at 0.00m to 24 at -13.66m)
+11> North-South range = 14.30m (from 11 at 10.13m to 28 at -4.17m)
+12> East-West range = 20.51m (from 24 at 20.17m to 5 at -0.34m)
 13>    6 1-nodes.
 14>   16 2-nodes.
 15>    5 3-nodes.
@@ -49,12 +49,90 @@ processing extended elevation ... done
 processing references ... done
 selecting export objects ... done
 writing coffinCaveth.3d ... done
+processing projection plan ... done
+average distortion: 8.21%
+
+
+############### export maps & scraps selection #################
+M    -6.98 planMap@coffinCave ()
+S    -3.73 scrap1@coffinCave ()
+S    -8.28 scrap63@coffinCave ()
+S    -8.93 scrap73@coffinCave ()
+########## end of export maps & scraps selection ###############
+writing output/coffinCaveMap.pdf ...
+####################### metapost log file ########################
+This is MetaPost, version 2.02 (TeX Live 2022) (kpathsea version 6.3.4)  24 JAN 2023 01:11
+**data.mp
+(/usr/local/texlive/2022/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2022/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./data.mp
+{randomseed:=42}
+ [1] [2] [3] [4]
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] (./mptextmp.mp) [11] [12] [13] [14]
+[15] [16] [17] [18] [19] )
+ 
+Here is how much of MetaPost's memory you used:
+ 5259 strings using 115518 characters
+ 3388640 bytes of node memory
+ 1870 symbolic tokens
+ 8i,82n,11p,312b,4f stack positions out of 16i,98n,12p,312b,6f
+33 output files written: data-patt.1 .. data.19
+
+
+#################### end of metapost log file ####################
+converting scraps ... done
+making map ... done
+######################## pdftex log file #########################
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdftex 2022.8.25)  24 JAN 2023 01:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**data.tex
+(./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
+(/usr/local/texlive/2022/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
+(./th_fontdef.tex{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdf
+tex.map})
+(./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
+ 72 numeric registers used out of 32768
+
+[1] ) 
+Here is how much of TeX's memory you used:
+ 297 strings out of 494594
+ 4131 string characters out of 6146457
+ 41177 words of memory out of 5000000
+ 1952 multiletter control sequences out of 15000+600000
+ 21229 words of font info for 66 fonts, out of 8000000 for 9000
+ 1416 hyphenation exceptions out of 8191
+ 12i,5n,7p,337b,76s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.
+pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.
+pfb>
+Output written on data.pdf (1 page, 58103 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+
+##################### end of pdftex log file #####################
+done
 writing xtherion file ... done
 compilation time: 0 sec
 
 
 ######################### loop errors ##########################
 REL-ERR ABS-ERR TOTAL-L STS X-ERROR Y-ERROR Z-ERROR STATIONS
-  4.74%    2.1m   43.6m   5    0.2m    2.0m   -0.2m [A10@coffinCave - A26 - A22 - A21 - A20 - A10]
-  3.86%    2.3m   60.8m   6   -0.8m    2.2m    0.2m [A10@coffinCave - A16 - A15 - A13 - A12 - A11 - A10]
+  4.74%    0.6m   13.3m   5    0.1m    0.6m   -0.1m [A10@coffinCave - A26 - A22 - A21 - A20 - A10]
+  3.86%    0.7m   18.5m   6   -0.2m    0.7m    0.1m [A10@coffinCave - A16 - A15 - A13 - A12 - A11 - A10]
 ##################### end of loop errors #######################
+
+
+###################### scrap distortions #######################
+ PROJECTION: plan
+ AVERAGE  MAXIMAL  SCRAP
+   6.67%   87.12%  scrap63@coffinCave
+   8.79%   57.94%  scrap1@coffinCave
+   7.72%   50.10%  scrap73@coffinCave
+################### end of scrap distortions ###################
