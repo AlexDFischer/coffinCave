@@ -45,11 +45,9 @@ input planMap.th2
 map planMap
   scrap1
   scrap63
-  scrap73
 endmap
 
 join scrap1 scrap63
-join scrap63 scrap73 -count 2
 
 endsurvey
 

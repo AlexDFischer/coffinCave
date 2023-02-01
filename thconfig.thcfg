@@ -8,7 +8,9 @@ layout mapLayout
   legend on
   symbol-set NSS
   units imperial
-  scale 1 75
+  scale 1 50
+  symbol-hide group centreline
+  symbol-assign point mud clay
 endlayout
 
 export model -fmt survex -o coffinCaveth.3d
