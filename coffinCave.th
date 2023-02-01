@@ -47,7 +47,7 @@ map planMap
   scrap63
 endmap
 
-join scrap1 scrap63
+join scrap1 scrap63 -count 2
 
 endsurvey
 

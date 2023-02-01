@@ -96,6 +96,13 @@ line wall
   smooth off
 endline
 
+point 429.0 -649.0 label -text "dig under floor"
+
+line arrow
+  446.0 -658.0
+  602.0 -693.0
+endline
+
 line pit -close on
   590.0 -691.0
   583.5 -700.5 587.5 -705.0 591.0 -705.5
@@ -463,6 +470,8 @@ line wall
   smooth off
 endline
 
+point 591.0 -725.0 dig
+
 line wall
   649.5 -607.0
   643.0 -638.5 648.5 -618.5 646.0 -627.0
@@ -509,10 +518,25 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -reverse on
+point 586.0 -414.0 gradient -orientation 127.6
+
+point 560.0 -455.0 gradient -orientation 27.3
+
+point 494.0 -240.0 label -text "tt, light connection"
+
+line arrow
+  509.0 -253.0
+  600.0 -329.0
+endline
+
+line ceiling-step -clip off
   575.5 -345.0
-  598.5 -346.5 608.5 -351.5 617.5 -363.0
-  626.5 -374.5 639.0 -392.5 650.0 -399.0
+  599.0 -344.0 618.5 -363.5 624.0 -372.0
+endline
+
+line wall -reverse on
+  624.0 -372.0
+  633.0 -383.5 639.0 -392.5 650.0 -399.0
   661.0 -405.5 729.5 -460.0 759.0 -457.0
   764.36 -456.46 772.0 -461.0 774.0 -444.0
   smooth off
@@ -806,7 +830,7 @@ endline
 
 point 849.0 -445.0 mud
 
-point 185.0 -409.0 label -text Entrances
+point 190.0 -411.0 label -text entrances
 
 line dripline -reverse on -clip off
   380.5 -399.5
@@ -887,17 +911,10 @@ line ceiling-step -reverse on
 endline
 
 line wall
-  240.0 -1497.5
-  241.0 -1489.0 249.0 -1484.0 257.0 -1483.5
+  257.0 -1483.5
   265.0 -1483.0 352.0 -1495.0 352.0 -1495.0
   smooth off
   292.0 -1559.0
-endline
-
-line wall
-  229.5 -1428.0
-  224.5 -1434.5 210.5 -1460.0 204.0 -1467.0
-  smooth off
 endline
 
 line wall -close on
@@ -913,14 +930,29 @@ line wall -close on
   466.0 -1338.5 471.5 -1328.5 477.5 -1321.5
 endline
 
+line wall -subtype presumed
+  370.0 -1314.0
+  339.0 -1326.0 281.0 -1408.0 272.0 -1438.0
+endline
+
+line wall -subtype presumed
+  257.0 -1483.5
+  255.0 -1632.0
+endline
+
+line wall -subtype presumed
+  343.0 -1288.5
+  283.0 -1324.5 233.22 -1392.5 223.5 -1453.0
+  219.0 -1481.0 224.5 -1632.5 223.0 -1632.5
+  smooth off
+endline
+
 line wall
   370.0 -1314.0
   410.0 -1296.5 430.0 -1310.0 433.0 -1323.0
   436.0 -1336.0 442.0 -1377.0 435.5 -1393.0
   433.4 -1398.18 394.5 -1463.0 391.0 -1462.5
   324.89 -1453.06 285.0 -1439.5 272.0 -1438.0
-  259.0 -1436.5 272.23 -1418.79 273.0 -1417.5
-  smooth off
 endline
 
 line pit
@@ -964,6 +996,19 @@ point 303.0 -1561.5 blocks
 point 1119.0 -1503.0 mud
 
 point 1083.0 -1402.0 mud
+
+line ceiling-step -reverse on -clip off
+  844.0 -1238.0
+  842.0 -1143.0
+endline
+
+line arrow
+endline
+
+point 1068.0 -1547.0 label -text "good dirt dig, warm air"
+
+line arrow
+endline
 
 line wall
   1003.0 -1417.0
@@ -1022,7 +1067,8 @@ endline
 
 line wall -reverse on -subtype underlying -clip off
   771.0 -1408.0
-  755.0 -1383.0
+  754.0 -1401.5 755.0 -1383.0 755.0 -1383.0
+  smooth off
 endline
 
 line wall
@@ -1073,7 +1119,7 @@ endline
 
 line wall -subtype underlying
   803.0 -1356.0
-  789.89 -1337.82 758.0 -1331.0 727.5 -1337.5
+  788.0 -1340.0 758.0 -1331.0 727.5 -1337.5
 endline
 
 line pit -clip off
@@ -1110,13 +1156,16 @@ line rock-border -close on -clip off
   592.0 -1426.0
 endline
 
-point 1026.0 -1531.0 dig
+area clay
+endarea
+
+point 1068.0 -1526.0 dig
 
 point 855.0 -1395.0 gradient -orientation 102.9
 
 line wall
   926.0 -1379.0
-  926.0 -1379.0 845.0 -1356.0 803.0 -1356.0
+  926.0 -1379.0 818.0 -1372.0 803.0 -1356.0
 endline
 
 line wall
