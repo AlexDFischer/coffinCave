@@ -4,19 +4,8 @@ input layout.th
 select coffinCave 
 source coffinCave.th
 
-layout mapLayout
-  legend on
-  symbol-set NSS
-  statistics carto all
-  units imperial
-  scale 1 80
-  symbol-hide group centreline
-  
-  # Pdf Options
-  doc-author "Alex Fischer"
-  doc-title "Coffin Cave Map"
-endlayout
+text en "area clay" "mud/dirt"
 
 export model -fmt survex -o coffinCaveth.3d
 
-export map -projection plan -layout mapLayout -o "output/coffinCaveMap.pdf"
+export map -projection plan -layout local -o "output/coffinCaveMap.pdf"

@@ -1,6 +1,6 @@
 set xth(ctrl,cp,datlist) {}
 xth_cp_data_tree_insert 1 {} 0   "" "" "length: 77.88m (surface 0.00m, duplicated 0.00m)\nvertical range: 13.66m (from A1@coffinCave at 0.00m to A18@coffinCave at -13.66m)\nnorth-south range: 14.30m (from A11@coffinCave at 10.13m to A28@coffinCave at -4.17m)\neast-west range: 20.51m (from A18@coffinCave at 20.17m to A5@coffinCave at -0.34m)\nnumber of shots: 29\nnumber of stations: 28"
-xth_cp_data_tree_insert 20 1 1 coffinCave coffinCave "Coffin Cave" "Coffin Cave" "length: 77.88m (surface 0.00m, duplicated 0.00m)\nvertical range: 13.66m (from A1@coffinCave at 0.00m to A18@coffinCave at -13.66m)\nnorth-south range: 14.30m (from A11@coffinCave at 10.13m to A28@coffinCave at -4.17m)\neast-west range: 20.51m (from A18@coffinCave at 20.17m to A5@coffinCave at -0.34m)\nnumber of shots: 29\nnumber of stations: 28"
+xth_cp_data_tree_insert 19 1 1 coffinCave coffinCave "Coffin Cave" "Coffin Cave" "length: 77.88m (surface 0.00m, duplicated 0.00m)\nvertical range: 13.66m (from A1@coffinCave at 0.00m to A18@coffinCave at -13.66m)\nnorth-south range: 14.30m (from A11@coffinCave at 10.13m to A28@coffinCave at -4.17m)\neast-west range: 20.51m (from A18@coffinCave at 20.17m to A5@coffinCave at -0.34m)\nnumber of shots: 29\nnumber of stations: 28"
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
@@ -8,5 +8,5 @@ xth_cp_map_tree_insert map 1 232X1 p1 1 planMap planMap@coffinCave "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 78 4
 set xth(th_exit_state) 2
-set xth(th_exit_number) 1677404280
+set xth(th_exit_number) 1677442935
 

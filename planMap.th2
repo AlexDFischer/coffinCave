@@ -901,6 +901,8 @@ point 571.0 -381.0 station -name A3
 
 point 538.0 -482.0 station -name A2
 
+point 568.0 -652.0 passage-height -value [5 ft]
+
 point 410.0 -432.0 station -name A1
 
 endscrap
