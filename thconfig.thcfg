@@ -7,10 +7,14 @@ source coffinCave.th
 layout mapLayout
   legend on
   symbol-set NSS
+  statistics carto all
   units imperial
-  scale 1 50
+  scale 1 80
   symbol-hide group centreline
-  symbol-assign point mud clay
+  
+  # Pdf Options
+  doc-author "Alex Fischer"
+  doc-title "Coffin Cave Map"
 endlayout
 
 export model -fmt survex -o coffinCaveth.3d

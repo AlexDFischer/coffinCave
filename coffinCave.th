@@ -1,9 +1,15 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust 0 0 256 256
 ##XTHERION## xth_me_area_zoom_to 100
-survey coffinCave
+survey coffinCave -title "Coffin Cave"
 
 centreline
+
+team "Alex Fischer"
+team "Amelia Fatykohva"
+team "Rachel Aalto"
+
+date 2023.01.03
 
 units length feet
 

@@ -7,7 +7,7 @@ encoding  utf-8
 
 scrap scrap1 -projection plan -scale [-128 -2176 1464 -2176 0.0 0.0 40.4368 0.0 ft] -sketch coffinCavePlan.png 0 -2048
 
-point 486.5 -460.5 gradient -orientation 107.7
+point 423.5 -437.5 gradient -orientation 107.7
 
 point 470.5 -334.0 gradient -orientation 107.7
 
@@ -66,6 +66,7 @@ endline
 line dripline -clip off
   495.5 -561.0
   491.0 -573.0 496.0 -593.0 512.0 -594.0
+  smooth off
 endline
 
 line wall
@@ -117,8 +118,6 @@ line wall
   1030.0 -381.0 1034.25 -377.25 1034.25 -377.25
   smooth off
 endline
-
-point 1091.0 -430.5 mud
 
 line rock-border -close on
   930.5 -408.5
@@ -274,25 +273,50 @@ line rock-border -close on
   smooth off
 endline
 
-point 558.5 -809.5 mud
-
-point 580.5 -765.5 mud
-
-point 722.5 -787.0 mud
-
-point 754.0 -756.5 mud
-
 area clay
-  l191-673--841
+  l223-854--302
 endarea
 
-line border -id l191-673--841 -close on -subtype invisible
-  619.5 -777.5
-  554.5 -755.0
-  532.0 -770.0
-  507.0 -849.0
-  599.0 -855.0
-  619.5 -777.5
+line ceiling-step
+endline
+
+line border -id l223-854--302 -close on -subtype invisible
+  768.0 -458.0
+  743.0 -502.0
+  700.75 -533.75
+  752.0 -564.0
+  770.0 -602.0
+  771.0 -614.0
+  846.0 -646.0
+  1078.0 -542.0
+  1138.0 -451.0
+  1117.0 -397.0
+  1018.0 -334.0
+  976.0 -355.0
+  881.0 -279.0
+  801.0 -353.0
+  760.0 -428.0
+  768.0 -458.0
+endline
+
+line border -subtype invisible
+endline
+
+line ceiling-step
+endline
+
+area clay
+  l218-802--813
+endarea
+
+line border -id l218-802--813 -close on -subtype invisible
+  717.0 -661.0
+  634.0 -627.0
+  490.0 -708.0
+  528.0 -888.0
+  791.0 -842.0
+  810.0 -792.0
+  717.0 -661.0
 endline
 
 line rock-border -close on
@@ -508,6 +532,24 @@ line rock-border -close on -reverse on
   smooth off
 endline
 
+point 708.0 -414.0 passage-height -value [1 ft]
+
+line ceiling-step
+  709.0 -577.0
+  761.0 -595.0
+endline
+
+line ceiling-step -reverse on
+  709.5 -553.5
+  752.0 -564.0
+endline
+
+point 792.0 -734.0 passage-height -value [1 ft]
+
+point 828.0 -335.0 passage-height -value [6 ft]
+
+point 560.0 -324.0 passage-height -value [3 ft]
+
 line wall -reverse on
   774.0 -444.0
   777.5 -428.0 783.5 -402.0 802.0 -385.0
@@ -532,6 +574,7 @@ endline
 line ceiling-step -clip off
   575.5 -345.0
   599.0 -344.0 618.5 -363.5 624.0 -372.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -828,9 +871,7 @@ line arrow
   354.0 -428.0
 endline
 
-point 849.0 -445.0 mud
-
-point 190.0 -411.0 label -text entrances
+point 173.0 -412.0 label -text entrances
 
 line dripline -reverse on -clip off
   380.5 -399.5
@@ -904,6 +945,8 @@ point 396.0 -1495.0 station -name A23
 
 point 223.5 -1453.0 station -name A25
 
+point 715.0 -1483.0 passage-height -value [6 ft]
+
 line ceiling-step -reverse on
   805.0 -1347.0
   793.0 -1314.0 782.0 -1265.0 707.0 -1263.0
@@ -933,6 +976,7 @@ endline
 line wall -subtype presumed
   370.0 -1314.0
   339.0 -1326.0 281.0 -1408.0 272.0 -1438.0
+  smooth off
 endline
 
 line wall -subtype presumed
@@ -953,6 +997,7 @@ line wall
   436.0 -1336.0 442.0 -1377.0 435.5 -1393.0
   433.4 -1398.18 394.5 -1463.0 391.0 -1462.5
   324.89 -1453.06 285.0 -1439.5 272.0 -1438.0
+  smooth off
 endline
 
 line pit
@@ -961,6 +1006,7 @@ line pit
   648.0 -1331.0 633.0 -1323.0 617.0 -1319.0
   601.0 -1315.0 564.35 -1304.29 561.0 -1316.0
   560.0 -1319.5 666.5 -1348.5 679.5 -1354.0
+  smooth off
 endline
 
 line ceiling-step
@@ -973,11 +1019,11 @@ point 954.5 -1222.5 gradient -orientation 98.2
 
 point 873.0 -1197.0 gradient -orientation 98.2
 
-point 453.5 -1347.0 gradient -orientation 174.2
+point 453.5 -1361.0 gradient -orientation 174.2
 
 point 497.0 -1398.5 gradient -orientation 80.1
 
-point 509.0 -1306.5 gradient -orientation 91.9
+point 514.0 -1301.5 gradient -orientation 100.1
 
 line rock-border -close on
   748.0 -1192.5
@@ -993,10 +1039,6 @@ endline
 
 point 303.0 -1561.5 blocks
 
-point 1119.0 -1503.0 mud
-
-point 1083.0 -1402.0 mud
-
 line ceiling-step -reverse on -clip off
   844.0 -1238.0
   842.0 -1143.0
@@ -1010,15 +1052,49 @@ point 1068.0 -1547.0 label -text "good dirt dig, warm air"
 line arrow
 endline
 
+line wall -subtype presumed
+  1099.0 -1498.0
+  1074.0 -1517.0
+endline
+
+line wall -subtype presumed
+  1081.0 -1529.0
+  1114.0 -1526.0
+endline
+
+point 381.0 -1435.0 passage-height -value [2 ft]
+
+point 1074.0 -1187.0 passage-height -value [4 ft]
+
+point 803.0 -1091.0 passage-height -value [4 ft]
+
+point 1100.0 -1361.0 passage-height -value [2 ft]
+
 line wall
-  1003.0 -1417.0
-  1018.0 -1410.0 1025.0 -1411.0 1039.0 -1417.0
-  1053.0 -1423.0 1053.0 -1413.0 1068.0 -1421.0
-  1083.0 -1429.0 1116.0 -1456.0 1121.0 -1462.0
-  1126.0 -1468.0 1132.0 -1479.0 1117.0 -1489.0
-  1102.0 -1499.0 1078.53 -1516.37 1083.5 -1523.0
-  1088.0 -1529.0 1089.5 -1525.51 1123.0 -1519.5
-  1142.5 -1516.0 1145.82 -1517.68 1162.0 -1512.5
+  1099.0 -1498.0
+  1099.0 -1498.0 1121.0 -1488.0 1123.0 -1481.0
+  1125.0 -1474.0 1120.0 -1467.0 1119.0 -1464.0
+  1118.0 -1461.0 1072.0 -1419.0 1042.0 -1417.0
+  1012.0 -1415.0 1003.0 -1417.0 1003.0 -1417.0
+  smooth off
+endline
+
+area clay
+  l225-1195--1434
+endarea
+
+line border -id l225-1195--1434 -close on -subtype invisible
+  1034.0 -1361.0
+  1019.0 -1426.0
+  1049.0 -1599.0
+  1254.0 -1534.0
+  1152.0 -1366.0
+  1034.0 -1361.0
+endline
+
+line wall
+  1114.0 -1526.0
+  1133.5 -1522.5 1145.82 -1517.68 1162.0 -1512.5
   1174.5 -1508.5 1179.0 -1499.0 1179.0 -1499.0
   smooth off
   1179.0 -1499.0 1180.5 -1471.0 1169.5 -1460.0
@@ -1038,8 +1114,8 @@ line wall
   690.0 -1269.0 677.0 -1268.0 672.0 -1277.0
   667.0 -1286.0 663.0 -1281.0 654.0 -1276.0
   645.0 -1271.0 636.5 -1275.5 635.5 -1289.5
-  634.5 -1303.5 531.8 -1295.67 525.0 -1294.0
-  476.0 -1282.0 426.12 -1224.86 343.0 -1288.5
+  634.5 -1303.5 533.0 -1284.0 523.0 -1283.0
+  472.8 -1277.98 426.0 -1259.0 343.0 -1288.5
   smooth off
 endline
 
@@ -1070,6 +1146,12 @@ line wall -reverse on -subtype underlying -clip off
   754.0 -1401.5 755.0 -1383.0 755.0 -1383.0
   smooth off
 endline
+
+point 491.0 -1254.0 passage-height -value [2 ft]
+
+point 1121.0 -1547.0 passage-height -value [1 ft]
+
+point 863.0 -1453.0 passage-height -value [4 ft]
 
 line wall
   672.5 -1485.5
@@ -1120,6 +1202,7 @@ endline
 line wall -subtype underlying
   803.0 -1356.0
   788.0 -1340.0 758.0 -1331.0 727.5 -1337.5
+  smooth off
 endline
 
 line pit -clip off
@@ -1166,6 +1249,7 @@ point 855.0 -1395.0 gradient -orientation 102.9
 line wall
   926.0 -1379.0
   926.0 -1379.0 818.0 -1372.0 803.0 -1356.0
+  smooth off
 endline
 
 line wall
@@ -1199,6 +1283,12 @@ endscrap
 
 
 scrap scrap177 -scale [-128 -2176 1464 -2176 0.0 0.0 40.4368 0.0 ft]
+
+endscrap
+
+
+
+scrap scrap192 -scale [-128 -2176 1464 -2176 0.0 0.0 40.4368 0.0 ft]
 
 endscrap
 
