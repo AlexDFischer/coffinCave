@@ -6,7 +6,7 @@ layout local
   units imperial
   scale 1 80
   symbol-hide group centreline
-  map-comment "Lanesborough, Massachusetts. BRIC4 survey. Cartography by Alex Fischer."
+  map-comment "Lanesborough, Massachusetts. BRIC4 survey. Drafted by Alex Fischer using Therion."
   statistics carto all
   
   # Pdf Options

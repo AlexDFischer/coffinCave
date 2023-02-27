@@ -4,9 +4,9 @@ xth_cp_data_tree_insert 19 1 1 coffinCave coffinCave "Coffin Cave" "Coffin Cave"
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
-xth_cp_map_tree_insert map 1 232X1 p1 1 planMap planMap@coffinCave "" ""
+xth_cp_map_tree_insert map 1 252X1 p1 1 planMap planMap@coffinCave "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 78 4
 set xth(th_exit_state) 2
-set xth(th_exit_number) 1677442935
+set xth(th_exit_number) 1677459640
 
